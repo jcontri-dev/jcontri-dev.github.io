@@ -258,7 +258,7 @@ a{
 
     #projects {
         .projects-item, .projects-item.reverse{
-            flex-direction: column-reverse;
+            flex-direction: column-reverse !important;
         }
     }
 
