@@ -215,10 +215,18 @@ a {
           align-items: center;
   gap: 8px;
   margin-bottom: 12px;
+  border-bottom: 0px solid #7229c3;
+  -webkit-transition: 250ms;
+  transition: 250ms;
 }
 
 #projects .projects-list .projects-item .project-info a .bi::before, #projects .projects-list .projects-item .project-info a [class*=" bi-"]::before {
   font-weight: 900 !important;
+}
+
+#projects .projects-list .projects-item .project-info a:hover {
+  color: #7229c3;
+  border-bottom: 1px solid #7229c3;
 }
 
 #projects .projects-list .projects-item .project-title {
@@ -232,6 +240,7 @@ a {
 
 #projects .projects-list .projects-item .project-description {
   text-align: justify;
+  margin: 5px 0 25px 0;
 }
 
 #projects .projects-list .projects-item .project-tags {

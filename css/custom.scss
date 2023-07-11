@@ -161,9 +161,15 @@ a{
                     align-items: center;
                     gap: 8px;
                     margin-bottom: 12px;
+                    border-bottom: 0px solid #7229c3;
+                    transition: 250ms;
                     .bi::before, [class*=" bi-"]::before{
                         font-weight: 900 !important;
                     }
+                }
+                a:hover{
+                    color: #7229c3;
+                    border-bottom: 1px solid #7229c3;
                 }
             }
             .project-title{
@@ -176,6 +182,7 @@ a{
             }
             .project-description{
                 text-align: justify;
+                margin: 5px 0 25px 0;
             }
             .project-tags{
                 display: flex;
