@@ -248,3 +248,21 @@ a{
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    #index{
+        .bi-code{
+            font-size: 300px;
+        }
+    }
+
+    #projects {
+        .projects-item, .projects-item.reverse{
+            flex-direction: column-reverse;
+        }
+    }
+
+    footer .col-auto{
+        text-align: center;
+    }
+}
