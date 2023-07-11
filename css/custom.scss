@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+a{
+    color: #8327b8;
+}
+
+#index{
+    #header-content{
+        .badge{
+            font-weight: 500;
+            font-family: 'Fira Mono', monospace;
+        }
+        .fs-2{
+            font-size: 1.5rem !important;
+            font-weight: 600 !important;
+            color: #5d5d5d;
+        }
+        .fs-3{
+            font-size: 1.75rem !important;
+        }
+        .display-3 span{
+            font-size: 3.5rem !important;
+        }
+        .btn-primary{
+            background-color: #4e2cd7;
+            border-color: #4e2cd7;
+        }
+        .btn-primary:hover{
+            background-color: #4122bd;
+            border-color: #4122bd;
+        }
+        .btn-secondary{
+            color: white;
+            background-color: #bb2297;
+            border-color: #bb2297;
+        }
+        .btn-secondary:hover{
+            background-color: #971679;
+            border-color: #971679;
+        }
+    }
+    .profile {
+        display: flex;
+        justify-content: center;
+        .bi-code{
+            height: fit-content;
+            align-self: center;
+            color: white;
+            font-size: 350px;
+        }
+    }
+}
+
+#about{
+    .lead{
+        font-weight: 600 !important;
+        color: #5d5d5d;
+        margin-top: 1.25rem;
+    }
+}
+
+#experience{
+    .experience-item{
+        display: flex;
+        flex-direction: row;
+        margin: 50px 0;
+        border-bottom: 1px solid #47474740;
+        padding: 0 0 25px 0;
+        &:last-child{
+            border-bottom: 0;
+        }
+        .experience-date{
+            flex: 0 0 25%;
+            font-weight: 500;
+            font-size: 18px;
+            color: #828385;
+            text-transform: uppercase;
+        }
+        .experience-info{
+            text-align: left;
+            .experience-job{
+                font-weight: 700;
+                font-size: 22px;
+                background: linear-gradient(135deg, #622acc 0%, #a624a3 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .experience-job.before{
+                font-weight: 400;
+                font-size: 18px;
+                color: #828385;
+            }
+            .experience-description{
+                font-size: 16px;
+                text-align: justify;
+            }
+            .experience-tools{
+                display: flex;
+                justify-content: center;
+                gap: 4px;
+                flex-wrap: wrap;
+                .experience-tool{
+                    background: linear-gradient(135deg, #622acc 0%, #a624a3 100%);
+                    color: white;
+                    padding: 4px 12px;
+                    border-radius: 8px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .experience-item{
+            flex-direction: column;
+        }
+    }
+}
+
+#projects{
+    .projects-list{
+        .projects-item{
+            display: flex;
+            gap: 40px;
+            margin: 50px 0;
+            padding: 0 0 25px 0;
+            border-bottom: 1px solid #47474740;
+            &:last-child{
+                border-bottom: 0;
+            }
+            .project-imgs{
+                flex: 100%;
+                .project-img{
+                    width: 85%;
+                    border: 3px solid #7229c3;
+                    box-shadow: 2px 2px 2px 0px #0000006e;
+                    border-radius: 4px;
+                    float: right;
+                    margin-left: 15px;
+                    position: relative;
+                    transition: 250ms;
+                }
+                .project-img.mid{
+                    float: left;
+                    margin-left: unset;
+                    margin: -15px 15px -15px 0px;
+                    z-index: 1;
+                }
+                .project-img:hover{
+                    z-index: 2;
+                    transform: scale(1.15);
+                }
+            }
+            .project-info{
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                a{
+                    text-decoration: none;
+                    text-align: left;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-bottom: 12px;
+                    .bi::before, [class*=" bi-"]::before{
+                        font-weight: 900 !important;
+                    }
+                }
+            }
+            .project-title{
+                font-weight: 700;
+                font-size: 22px;
+                background: linear-gradient(135deg, #622acc 0%, #a624a3 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin: 0;
+            }
+            .project-description{
+                text-align: justify;
+            }
+            .project-tags{
+                display: flex;
+                justify-content: center;
+                gap: 4px;
+                flex-wrap: wrap;
+                height: fit-content;
+                width: 100%;
+                .project-tag{
+                    background: linear-gradient(135deg, #622acc 0%, #a624a3 100%);
+                    color: white;
+                    padding: 4px 12px;
+                    border-radius: 8px;
+                    font-size: 12px;
+                }
+            }
+        }
+        .projects-item.reverse{
+            flex-direction: row-reverse;
+            .project-img{
+                float: left;
+                margin-right: 15px;
+            }
+            .project-img.mid{
+                float: left;
+                margin-left: unset;
+                margin: -15px 15px -15px 0px;
+
+                float: right;
+                margin-right: unset;
+                margin: -15px 0px -15px 15px;
+            }
+        }
+    }
+}
+
+.display-5{
+    position: relative;
+    display: block;
+    .text-gradient::before {
+        content: "";
+        display: block;
+        width: 240px;
+        height: 2px;
+        background: #6a2ac830;
+        left: 0;
+        top: 50%;
+        position: absolute;
+      }
+      .text-gradient::after {
+        content: "";
+        display: block;
+        width: 240px;
+        height: 2px;
+        background: #6a2ac830;
+        right: 0;
+        top: 50%;
+        position: absolute;
+      }
+      @media screen and (max-width: 600px) {
+        .text-gradient::before, .text-gradient::after{
+            content: unset;
+        }
+    }
+}
